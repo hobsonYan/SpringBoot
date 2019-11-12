@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /hobson
+student:
+  name: Hobson
+  age: 100
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/hobson?characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+#content: "name: ${name}, age: ${age}"
