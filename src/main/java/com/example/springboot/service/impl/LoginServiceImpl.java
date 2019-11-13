@@ -22,4 +22,14 @@ public class LoginServiceImpl implements LoginService {
     public Result updatePassword(String prePassword, String newPassword) {
         return null;
     }
+
+    @Override
+    public Result forgetPasswordByPhone(String username, String phone) {
+        return null;
+    }
+
+    @Override
+    public Result forgetPasswordByEmail(String username, String email) {
+        return null;
+    }
 }
