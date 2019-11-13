@@ -12,4 +12,8 @@ public interface LoginService {
     Result userLogin(String username, String password);
 
     Result updatePassword(String prePassword, String newPassword);
+
+    Result forgetPasswordByPhone(String username, String phone);
+
+    Result forgetPasswordByEmail(String username, String email);
 }
